@@ -46,8 +46,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
     implementation(Deps.coreKtx) // Core KTX
     implementation(Deps.appcompat) // AppCompat
     implementation(Deps.material) // Material Design
@@ -82,5 +82,5 @@ dependencies {
     implementation (Deps.mapsService)
     implementation (Deps.location)
     implementation (Deps.placesApi)
-    implementation (Deps.mapsUtils)
+   // implementation (Deps.mapsUtils)
 }

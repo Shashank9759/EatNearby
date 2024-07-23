@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id ("kotlin-parcelize")
 
 }
 
@@ -47,6 +48,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":common:utils"))
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -59,8 +62,8 @@ dependencies {
 
 
     //hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
     implementation(Deps.coreKtx) // Core KTX
     implementation(Deps.appcompat) // AppCompat
     implementation(Deps.material) // Material Design
@@ -95,5 +98,5 @@ dependencies {
     implementation (Deps.mapsService)
     implementation (Deps.location)
     implementation (Deps.placesApi)
-    implementation (Deps.mapsUtils)
+   implementation (Deps.mapsUtils)
 }

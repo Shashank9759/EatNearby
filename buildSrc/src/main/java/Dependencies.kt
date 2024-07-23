@@ -4,7 +4,7 @@ object Versions {
     const val core = "1.9.0"
     const val appcompat = "1.5.1"
     const val androidMaterial = "1.6.1"
-    const val constraintLayout = "2.1.4"
+    const val constraintLayout = "1.0.1"
 
     const val testRunner = "1.5.2"
     const val testImplJUnit = "4.13.2"
@@ -45,11 +45,11 @@ object Versions {
     const val daggerHiltAndroidTestImpl = "2.44"
     const val constraintLayoutForCompose = "1.1.0-alpha09"
     // Google Maps
-    const val googleMapsCompose = "2.1.4"
-    const val mapsService = "18.1.0"
-    const val location = "21.0.1"
-    const val placesApi = "3.1.0"
-    const val mapsUtils = "2.2.0"
+    const val googleMapsCompose = "6.1.0"
+    const val mapsService = "19.0.0"
+    const val location = "21.3.0"
+    const val placesApi = "3.3.0"
+    const val mapsUtils = "3.8.2"
 }
 
 object Deps {
@@ -57,7 +57,7 @@ object Deps {
     const val coreKtx = "androidx.core:core-ktx:${Versions.core}" // Core KTX
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}" // AppCompat
     const val material = "com.google.android.material:material:${Versions.androidMaterial}" // Material Design
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}" // Constraint Layout
+    const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:${Versions.constraintLayout}" // Constraint Layout
 
     // Testing Libraries
     const val junit = "junit:junit:${Versions.testImplJUnit}" // JUnit
@@ -95,5 +95,9 @@ object Deps {
     const val mapsService = "com.google.android.gms:play-services-maps:${Versions.mapsService}" // Maps Service
     const val location = "com.google.android.gms:play-services-location:${Versions.location}" // Location Services
     const val placesApi = "com.google.android.libraries.places:places:${Versions.placesApi}" // Places API
-    const val mapsUtils = "com.google.maps.android:maps-utils:${Versions.mapsUtils}" // Maps Utils
+    const val mapsUtils = "com.google.maps.android:android-maps-utils:${Versions.mapsUtils}" // Maps Utils
+
+
+
+
 }
